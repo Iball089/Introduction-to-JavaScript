@@ -13,16 +13,25 @@ returns a value, that value will be logged to the console.  An example of this w
 /*
 Task 1a - Voting Age
 
+
 Do the following:   
    1. Create a variable called votingAge and assign it a value
    2. Console log true if age is 18 or higher
 
+   
+   }
+
    HINT: no function required
 */
 
+var votingAge = '18';
+if(x => x)
+console.log(true);
 
 
-/*
+
+
+   /*
 Task 1b - Values
 
 Do the following:   
@@ -33,10 +42,14 @@ Do the following:
    HINT: no function required
 */
 
+function winner(isWinner){
+  return (isWinner ? '2' : '4');
+}
+console.log(winner(true));
 
+console.log(winner(false));
 
-
-
+console.log(winner(null));
 /*
 Task 1c - Convert Strings to Numbers
 
@@ -47,6 +60,20 @@ Do the following:
 
    HINT: look up the Number method
 */
+
+function integars(x) {
+  if (isNaN(x)) {
+    return '1999';
+  }
+  return x * 1000;
+}
+
+console.log(integars('100F'));
+// expected output: 1999"
+
+console.log(integars('1000 + 999'));
+// expected output: 1999
+
 
 
 
@@ -109,8 +136,17 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight,age){
+  if(age >= 1 && weight <= 5){
+    return weight * 0.05;
+  }else if(age >=1 && weight >=5 && weight<==10){
+    return weight * 0.04;
+  }else if(age >= 1 && weight >= 11 && weight <=15){
+  return weight * 0.5;
+}else if(age >=1 && weight >= 1 && weight <=15){
+  return weight * 0.03;
+}else if(age >=1 && weight >= 11 && weight <=15){
+  return weight * 0.02;
 }
 
 
@@ -137,6 +173,8 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
+  if game 
+
   /*add your code here*/
 }
 
@@ -153,7 +191,7 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(x){
   /*add your code here*/
 }
 
